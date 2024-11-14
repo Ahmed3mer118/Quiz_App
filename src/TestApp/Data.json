@@ -1,0 +1,625 @@
+{
+  "DataStudents": [
+    {
+      "timestamp": "6:44:16 م 2024/06/23",
+      "name": "Farida Yasser",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:44:53 م 2024/06/23",
+      "name": "عبدالحميد هاني محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:44:58 م 2024/06/23",
+      "name": "Mohammed Sherif",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:45:06 م 2024/06/23",
+      "name": "كريم عبد اللطيف سيد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:45:06 م 2024/06/23",
+      "name": "Abdelrahman Hatem Abdelaziz Abu El Naga",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:45:09 م 2024/06/23",
+      "name": "Abo Bakr Ahmed Hussein",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:07 م 2024/06/23",
+      "name": "ندي أسامه",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:10 م 2024/06/23",
+      "name": "احمد سعد طه محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:11 م 2024/06/23",
+      "name": "محمد شبل",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:35 م 2024/06/23",
+      "name": "محمد خالد ابواامجد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:39 م 2024/06/23",
+      "name": "عمر اشرف محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:42 م 2024/06/23",
+      "name": "Mirna",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:51 م 2024/06/23",
+      "name": "شهد أحمد محمود محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:54 م 2024/06/23",
+      "name": "مينا روماني",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:46:57 م 2024/06/23",
+      "name": "احمد سعد طه محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:47:41 م 2024/06/23",
+      "name": "مينا روماني",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:48:11 م 2024/06/23",
+      "name": "Roba Ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:48:14 م 2024/06/23",
+      "name": "عبد العزيز",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:48:23 م 2024/06/23",
+      "name": "Eyad Aboelftoh",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:48:40 م 2024/06/23",
+      "name": "Ghassan",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:37 م 2024/06/26",
+      "name": "Mohammed Sherif",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:42 م 2024/06/26",
+      "name": "عبد الحميد هاني",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:43 م 2024/06/26",
+      "name": "Eyad Aboelftoh",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:48 م 2024/06/26",
+      "name": "شهد أحمد محمود محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:49 م 2024/06/26",
+      "name": "ندي أسامه",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:52 م 2024/06/26",
+      "name": "Farida Yasser",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:53 م 2024/06/26",
+      "name": "Abdelrahman Hatem",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:53 م 2024/06/26",
+      "name": "يوستينا جورج جميل",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:54 م 2024/06/26",
+      "name": "Abo Bakr Ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:08:54 م 2024/06/26",
+      "name": "Roba Ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:09:01 م 2024/06/26",
+      "name": "كريم عبد اللطيف سيد",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:09:02 م 2024/06/26",
+      "name": "ملك محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:09:07 م 2024/06/26",
+      "name": "محمد شبل",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:09:18 م 2024/06/26",
+      "name": "عمر اشرف محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:10:09 م 2024/06/26",
+      "name": "George Atef",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:10:27 م 2024/06/26",
+      "name": "Mirna",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:10:53 م 2024/06/26",
+      "name": "عبدالعزيز",
+      "group": "1"
+    },
+    {
+      "timestamp": "7:11:40 م 2024/06/26",
+      "name": "محمد خالد ابوالمجد",
+      "group": "1"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Eyad Aboelftoh",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Roba Ahmed",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Ganna Hany",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Suzan Essam Hafez",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Mirna",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Youstina George Gamil",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "ملك محمد",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Farida Yasser",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "ندي أسامه",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "George",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "محمد شبل",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Abo bakr Ahmed",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Mohammed Sherif",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "كريم عبد اللطيف سيد",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "عبد الحميد هاني",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "Abdelrahman Hatem",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "عمر اشرف محمد",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "احمد سعد طه محمد",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "غسان",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "احمد ابوالنجا",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "6:51:23 م 2024/07/07",
+      "name": "محمد ابوالنجا",
+      "group": "1",
+      "status": "( offline)"
+    },
+    {
+      "timestamp": "2024-07-10 19:02:56",
+      "name": "عمر اشرف محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:03:37",
+      "name": "غسان",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:03:39",
+      "name": "محمد خالد ابوالمجد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:03:48",
+      "name": "Abo bakr Ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:02",
+      "name": "كريم عبد اللطيف سيد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:06",
+      "name": "Ganna hany",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:22",
+      "name": "Suzan Essam Hafez",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:25",
+      "name": "Abdelhamed Hany",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:30",
+      "name": "Roba ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:33",
+      "name": "Eyad Aboelftoh",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:37",
+      "name": "Mohammed sherif",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:39",
+      "name": "محمد شبل",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:42",
+      "name": "Youstina George Gamil",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:45",
+      "name": "ملك محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:47",
+      "name": "George",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:49",
+      "name": "ندي اسامه",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:52",
+      "name": "Farida yasser",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:04:53",
+      "name": "Mirna",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:05:06",
+      "name": "محمد ابوالنجا",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:05:10",
+      "name": "احمد ابوالنجا",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-10 19:06:10",
+      "name": "عبدالعزيز تامر احمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:06:37",
+      "name": "George",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:27",
+      "name": "عمر اشرف محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:35",
+      "name": "Abo bakr Ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:39",
+      "name": "Roba ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:42",
+      "name": "Eyad Aboelftoh",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:45",
+      "name": "Mohammed sherif",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:49",
+      "name": "احمد سعد طه محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:54",
+      "name": "محمد خالد ابوالمجد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:32:58",
+      "name": "Ganna hany",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:33:03",
+      "name": "Suzan Essam Hafez",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:33:07",
+      "name": "ملك محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:33:17",
+      "name": "Mirna",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:33:22",
+      "name": "محمد ابوالنجا",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:33:25",
+      "name": "احمد ابوالنجا",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:33:35",
+      "name": "Abdelrahman hatem",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:33:39",
+      "name": "كريم عبد اللطيف سيد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:34:21",
+      "name": "ندي اسامه",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:34:28",
+      "name": "محمد شبل",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:45:20",
+      "name": "مينا روماني",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:55:19",
+      "name": "Abdelhamed Hany",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-14 18:55:33",
+      "name": "غسان",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:12:48",
+      "name": "George",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:12:53",
+      "name": "عمر اشرف محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:12:54",
+      "name": "محمد خالد ابوالمجد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:12:56",
+      "name": "مينا روماني",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:04",
+      "name": "Roba ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:07",
+      "name": "Eyad Aboelftoh",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:11",
+      "name": "Abdelrahman hatem",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:13",
+      "name": "Mohammed sherif",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:18",
+      "name": "Abdelhamed Hany",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:24",
+      "name": "غسان",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:26",
+      "name": "احمد سعد طه محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:42",
+      "name": "Abo bakr Ahmed",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:45",
+      "name": "Mirna",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:56",
+      "name": "ملك محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:13:59",
+      "name": "Youstina George Gamil",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:14:00",
+      "name": "Suzan Essam Hafez",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:14:04",
+      "name": "شهد أحمد محمود محمد",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:14:28",
+      "name": "ندي اسامه",
+      "group": "1"
+    },
+    {
+      "timestamp": "2024-07-21 19:14:28",
+      "name": "محمد شبل",
+      "group": "1"
+    }
+  ]
+}

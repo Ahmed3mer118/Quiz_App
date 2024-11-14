@@ -1,0 +1,21 @@
+/* .correct-answer {
+    color: green;
+  }
+  
+  .incorrect-answer {
+    color: red;
+  }   */
+     .form{
+        /* height: 100vh; */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 60%;
+        margin: auto;
+        text-align: center;
+     }
+   

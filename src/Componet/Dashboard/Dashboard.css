@@ -1,0 +1,36 @@
+body{
+    overflow-x: hidden;
+  
+}
+ul {
+    list-style: none;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color:orange;
+}
+button{
+  background-color: #f9bc60;
+}
+li{
+    margin: 10px auto;
+}
+.ulShow{
+    display: none;
+    transition: 0.5s;
+}
+.dashboard-left{
+    background-color:#004643;
+    color: white;
+    height: 100dvb;
+}
+
+li > button:hover{
+    position: relative;
+    left: 5px;
+    transition: 0.5s;
+}

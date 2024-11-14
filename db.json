@@ -1,0 +1,371 @@
+{
+  "dataStudents": [
+    {
+      "id": "8338",
+      "name": "Khaled Hany",
+      "number": "01110028075",
+      "group": "2023-10-10",
+      "place": "offline",
+      "appreciation": "Very Good"
+    },
+    {
+      "id": "b345",
+      "name": "Randa Mamdouh",
+      "number": "01022511391",
+      "group": "2023-10-10",
+      "place": "offline",
+      "appreciation": "Excellent"
+    },
+    {
+      "id": "917b",
+      "name": "Mohmoud Mamdouh",
+      "number": "01007206014",
+      "group": "2023-10-10",
+      "place": "offline",
+      "appreciation": "Good"
+    },
+    {
+      "id": "82fc",
+      "name": "mohmoud elhoshany",
+      "number": "01096873211",
+      "group": "2023-10-10",
+      "place": "offline",
+      "appreciation": "Very Good"
+    },
+    {
+      "id": "ad0d",
+      "name": "Rahma hamada",
+      "number": "33745049360",
+      "group": "2023-11-11",
+      "place": "online",
+      "appreciation": "Excellent"
+    },
+    {
+      "id": "c29e",
+      "name": "Sameh Mohamed ",
+      "number": "01005448287",
+      "group": "2023-11-11",
+      "place": "online",
+      "appreciation": "Excellent"
+    },
+    {
+      "id": "7481",
+      "name": "Khaled Ashraf",
+      "number": "01203013020",
+      "group": "2023-11-11",
+      "place": "online",
+      "appreciation": "Very Good"
+    },
+    {
+      "id": "ff9a",
+      "name": "Aya Ibrahim",
+      "number": "01027381934",
+      "group": "2023-11-11",
+      "place": "online",
+      "appreciation": "Good"
+    },
+    {
+      "id": "4ade",
+      "name": "Mona Gala",
+      "number": "01090784627",
+      "group": "2023-11-11",
+      "place": "online",
+      "appreciation": "Good"
+    },
+    {
+      "id": "777a",
+      "name": "Ahmed Magdy",
+      "number": "01094704310",
+      "group": "2024-02-23",
+      "place": "offline",
+      "appreciation": "Excellent"
+    },
+    {
+      "id": "6243",
+      "name": "Basma Mohamed",
+      "number": "01029004092",
+      "group": "2024-02-23",
+      "place": "offline",
+      "appreciation": "Very Good"
+    },
+    {
+      "id": "a360",
+      "name": "Zeina heshem",
+      "number": "01120865517",
+      "group": "2024-02-23",
+      "place": "offline",
+      "appreciation": "Very Good"
+    },
+    {
+      "id": "4bcb",
+      "name": "Omar Mohamed",
+      "number": "01064549815",
+      "group": "2024-02-23",
+      "place": "offline",
+      "appreciation": "Good"
+    },
+    {
+      "id": "7354",
+      "name": "Michael Antoun",
+      "number": "01271007234",
+      "group": "2024-04-21",
+      "place": "offline",
+      "appreciation": "Excellent"
+    },
+    {
+      "id": "585b",
+      "name": "Ahmed Elfeky",
+      "number": "01091997520",
+      "group": "2024-04-21",
+      "place": "offline",
+      "appreciation": "Excellent"
+    },
+    {
+      "id": "86b4",
+      "name": "Mohamed El-henawi",
+      "number": "01032591196",
+      "group": "2024-04-21",
+      "place": "offline",
+      "appreciation": "Very Good"
+    },
+    {
+      "id": "1869",
+      "name": "Youssef Atef",
+      "number": "01208430849",
+      "group": "2024-04-21",
+      "place": "offline",
+      "appreciation": "Good"
+    },
+    {
+      "id": "419f",
+      "name": "Mohanad Ali",
+      "number": "01097488650",
+      "group": "2024-04-21",
+      "place": "offline",
+      "appreciation": "Good"
+    },
+    {
+      "id": "0c99",
+      "name": "Ahmed Ismail",
+      "number": "01029050298",
+      "group": "2024-04-21",
+      "place": "offline",
+      "appreciation": "Good"
+    },
+    {
+      "id": "8ba9",
+      "name": "Sondos Sayed",
+      "number": "01140615648",
+      "group": "2024-04-21",
+      "place": "offline",
+      "appreciation": "Good"
+    },
+    {
+      "id": "7571",
+      "nameAr": "عبدالحميد هاني محمد",
+      "name": "Abdelhamed Hany Mohamed",
+      "appreciation": "good",
+      "ايميك الخاص": "abdelhamedhany4@gmail.com",
+      "number": "01026347571",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "3736",
+      "nameAr": "شهد أحمد محمود",
+      "name": "Shahd Ahmed Mahmoud",
+      "appreciation": "excellent",
+      "ايميك الخاص": "shahdahmed7878@gmail.com",
+      "number": "01205953736",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "2676",
+      "nameAr": "محمد شريف حنفى",
+      "name": "Mohamed sherif hanafy",
+      "appreciation": "very good",
+      "ايميك الخاص": "mohammedsherif675@gmail.com",
+      "number": "01000542676",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "nameAr": "احمد سعد طه محمد",
+      "name": "ِAhmed Saad Taha",
+      "appreciation": "very good",
+      "ايميك الخاص": "ahmdsdzyadt442@gmail.com",
+      "number": "01120770809",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "8062",
+      "nameAr": "ندي أسامه غالي",
+      "name": "Nada Osama Ghali",
+      "appreciation": "excellent",
+      "ايميك الخاص": "nadaosamagahli@gmail.com",
+      "number": "01009668062",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "2809",
+      "nameAr": "سوزان عصام حافظ",
+      "name": "Suzan Essam Hafez",
+      "appreciation": "excellent",
+      "ايميك الخاص": "suzanenba2003@gmail.com",
+      "number": "01014142809",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "1836",
+      "nameAr": "محمد خالد ابوالمجد",
+      "name": "Mohamed Khaled Aboelmagd",
+      "appreciation": "very good",
+      "ايميك الخاص": "Mo07amed5020@gmail.com",
+      "number": "01100711836",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "0030",
+      "nameAr": "عبدالرحمن حاتم عبدالعزيز",
+      "name": "Abdelrahman Hatem Abdelaziz",
+      "appreciation": "good",
+      "ايميك الخاص": "Bodyhatem24@gmail.com",
+      "number": "+201063370030",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "nameAr": "محمد شبل محمد",
+      "name": "Mohamed Shabl Mohamed",
+      "appreciation": "excellent",
+      "ايميك الخاص": "mohamedshabel100@gmail.com",
+      "number": "01154548448",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "9060",
+      "nameAr": "يوستينا جورج جميل",
+      "name": "Youstina George Gamil",
+      "appreciation": "good",
+      "ايميك الخاص": "Youstinageorge031@gmail.com",
+      "number": "1281469096",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "1095",
+      "nameAr": "جنه الله هاني محمد",
+      "name": "Ganna Hany Mohamed",
+      "appreciation": "good",
+      "ايميك الخاص": "gannahany2012@gmail.com",
+      "number": "01064601095",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "4895",
+      "nameAr": "روبا احمد مصطفى",
+      "name": "Roba Ahmed Mostafa",
+      "appreciation": "very good",
+      "ايميك الخاص": "robaahmed722@gmail.com",
+      "number": "01120294895",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "2517",
+      "nameAr": "كريم عبد اللطيف سيد",
+      "name": "Karim Abdellatif sayed",
+      "appreciation": "very good",
+      "ايميك الخاص": "elmasreykarim@gmail.com",
+      "number": "01095082517",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "4564",
+      "nameAr": "احمد ابو النجا حسن",
+      "name": "Ahmed Abuelnaja Hassan",
+      "appreciation": "good",
+      "ايميك الخاص": "Ahmed.Abuelnaja2009@gmail.com",
+      "number": "01123814564",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "6126",
+      "nameAr": "محمد ابوالنجا حسن",
+      "name": "Mohamed Abuelnaja Hassan",
+      "appreciation": "-",
+      "ايميك الخاص": "Mohamed.Abuelnaja2009@gmail.com",
+      "number": "01112436126",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "7771",
+      "nameAr": "اياد ايمن رمزي",
+      "name": "Eyad Aboelftoh",
+      "appreciation": "very good",
+      "ايميك الخاص": "aboelftoheyad@gmail.com",
+      "number": "01062237771",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "7313",
+      "nameAr": "ملك محمد عزالدين",
+      "name": "Malak Mohamed Ezz eldin",
+      "appreciation": "good",
+      "ايميك الخاص": "malakmohamedezz@gmail.com",
+      "number": "01278327313",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "9014",
+      "nameAr": "عبد العزيز تامر احمد السيد امام",
+      "name": "Abdlaziztamer",
+      "appreciation": "-",
+      "ايميك الخاص": "abdlaziztamer938@gmail.com",
+      "number": "01009519014",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "3162",
+      "nameAr": "ابوبكر احمد حسين",
+      "name": "Abo Bakr Ahmed Hussein",
+      "appreciation": "excellent",
+      "ايميك الخاص": "bakrrahhmeed@gmail.com",
+      "number": "01061893162",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "4073",
+      "nameAr": "عمر اشرف محمد",
+      "name": "Omar ashraf mohamed",
+      "appreciation": "very good",
+      "ايميك الخاص": "Umarrashraffmuhammed@gmail.com",
+      "number": "01093134073",
+      "place": "offline",
+      "group": "2024-06-23"
+    },
+    {
+      "id": "1985",
+      "nameAr": "ميرنا ميشيل حلمي",
+      "name": "Mirna Micheal helmy",
+      "ايميك الخاص": "Mirna.micheal.helmy@gmail.com",
+      "number": "01102991985",
+      "place": "offline",
+      "group": "2024-06-23"
+    }
+  ]
+}

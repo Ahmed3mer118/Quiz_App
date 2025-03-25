@@ -29,7 +29,11 @@ function SignUp() {
     <>
       <Toaster position="top-center" />
       <div className="container d-flex justify-content-center align-items-center vh-100">
-        <form className="border p-4 rounded shadow-lg w-50" onSubmit={handleSubmit}>
+        <form
+          className="border p-4 rounded shadow-lg w-50"
+          onSubmit={handleSubmit}
+          style={{minWidth:"70%"}}
+        >
           <h1 className="text-center mb-4">Sign Up</h1>
           <input
             type="text"

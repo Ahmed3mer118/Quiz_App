@@ -6,12 +6,11 @@ function Login() {
   const [dataUser, setData] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  useEffect(()=>{
+  useEffect(() => {
     if (!localStorage.getItem("user")) {
-      
-      toast.custom("Please Enter Any Email")
+      toast.custom("Please Enter Any Email");
     }
-  },[])
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,8 +42,9 @@ function Login() {
 
       <div className="container d-flex justify-content-center align-items-center vh-100">
         <form
-          className="border p-4 rounded shadow-lg w-50"
+          className="border p-4 rounded shadow-lg "
           onSubmit={handleSubmit}
+          style={{minWidth:"70%"}}
         >
           <h1 className="text-center mb-4">Login</h1>
           <input

@@ -16,7 +16,7 @@ function ShowAnswers({
             key={index}
             className="list-group-item"
             style={{
-              backgroundColor: cardStyles.backgroundColor, // استخدام نفس التنسيق
+              backgroundColor: cardStyles.backgroundColor,
               color: cardStyles.color,
             }}
           >

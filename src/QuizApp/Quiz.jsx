@@ -109,16 +109,32 @@ function Quiz() {
   const [userAnswers, setUserAnswers] = useState(
     Array(questions.length).fill(null)
   );
+
   const [showAnswers, setShowAnswers] = useState(false);
   const [showResult, setShowResult] = useState(false);
-
+  useEffect(() => {
+    const savedQuestion = localStorage.getItem("currentQuestion");
+    const savedScore = localStorage.getItem("score");
+    const savedAnswers = localStorage.getItem("userAnswers");
+  
+    if (savedQuestion !== null) {
+      setCurrentQuestion(parseInt(savedQuestion, 10));
+    }
+    if (savedScore !== null) {
+      setScore(Number(savedScore));
+    }
+    if (savedAnswers !== null) {
+      setUserAnswers(JSON.parse(savedAnswers));
+    }
+  }, []);
+  
   useEffect(() => {
     localStorage.setItem("currentQuestion", currentQuestion);
     localStorage.setItem("score", score);
     localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [currentQuestion, score, userAnswers, darkMode]);
-
+ 
   const handletoggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
@@ -201,6 +217,7 @@ function Quiz() {
           questions={questions}
           handleRestart={handleRestart}
           cardStyles={cardStyles}
+          userAnswers={userAnswers}
         />
       ) : showAnswers ? (
         <ShowAnswers

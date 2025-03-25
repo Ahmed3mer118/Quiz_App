@@ -1,194 +1,227 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./app.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import ShowResult from "./ShowResult";
+
+import ShowQuestions from "./ShowQuestions";
+import ShowAnswers from "./ShowAnswers";
 
 function Quiz() {
-  const [showQuestion, setShowQuestion] = useState(false);
-  const [score, setScore] = useState(0);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [loading, setLoading] = useState(false);
-  const [showAnswers, setShowAnswers] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
 
-  const [questions, setQuestions] = useState([
+  const questions = [
     {
-      question: "Which is the larget animal in the world?",
+      question: "What is the capital of France?",
       answers: [
-        { text: "Shark", correct: false },
-        { text: "Blue white", correct: true },
-        { text: "Elephent", correct: false },
-        { text: "Lion", correct: false },
+        { text: "Berlin", correct: false },
+        { text: "Madrid", correct: false },
+        { text: "Paris", correct: true },
+        { text: "Rome", correct: false },
       ],
     },
     {
-      question: "Which is the smallest country in the world?",
+      question: "What is the capital of Japan?",
       answers: [
-        { text: "Vaticon city", correct: true },
-        { text: "Bhutan", correct: false },
-        { text: "Nepal", correct: false },
-        { text: "shir lanka", correct: false },
+        { text: "Seoul", correct: false },
+        { text: "Beijing", correct: false },
+        { text: "Tokyo", correct: true },
+        { text: "Bangkok", correct: false },
       ],
     },
     {
-      question: "Which is the smallest continent in the world?",
+      question: "What is the capital of Canada?",
       answers: [
-        { text: "Asia", correct: false },
-        { text: " Asutralia", correct: true },
-        { text: "Africa", correct: false },
-        { text: "Arctic", correct: false },
+        { text: "Toronto", correct: false },
+        { text: "Vancouver", correct: false },
+        { text: "Ottawa", correct: true },
+        { text: "Montreal", correct: false },
       ],
     },
-  ]);
-  let [userAnwers, setUserAnwers] = useState(
-    false || Array(questions.length).fill(null)
+    {
+      question: "What is the capital of Brazil?",
+      answers: [
+        { text: "Rio de Janeiro", correct: false },
+        { text: "São Paulo", correct: false },
+        { text: "Brasília", correct: true },
+        { text: "Buenos Aires", correct: false },
+      ],
+    },
+    {
+      question: "What is the capital of Egypt?",
+      answers: [
+        { text: "Cairo", correct: true },
+        { text: "Alexandria", correct: false },
+        { text: "Giza", correct: false },
+        { text: "Luxor", correct: false },
+      ],
+    },
+    {
+      question: "What is the capital of India?",
+      answers: [
+        { text: "Mumbai", correct: false },
+        { text: "New Delhi", correct: true },
+        { text: "Kolkata", correct: false },
+        { text: "Bangalore", correct: false },
+      ],
+    },
+    {
+      question: "What is the capital of the United States?",
+      answers: [
+        { text: "New York", correct: false },
+        { text: "Washington D.C.", correct: true },
+        { text: "Los Angeles", correct: false },
+        { text: "Chicago", correct: false },
+      ],
+    },
+    {
+      question: "What is the capital of Germany?",
+      answers: [
+        { text: "Frankfurt", correct: false },
+        { text: "Berlin", correct: true },
+        { text: "Munich", correct: false },
+        { text: "Hamburg", correct: false },
+      ],
+    },
+    {
+      question: "What is the capital of Russia?",
+      answers: [
+        { text: "Saint Petersburg", correct: false },
+        { text: "Moscow", correct: true },
+        { text: "Kazan", correct: false },
+        { text: "Novosibirsk", correct: false },
+      ],
+    },
+    {
+      question: "What is the capital of Australia?",
+      answers: [
+        { text: "Sydney", correct: false },
+        { text: "Canberra", correct: true },
+        { text: "Melbourne", correct: false },
+        { text: "Brisbane", correct: false },
+      ],
+    },
+  ];
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("darkMode")) || false
   );
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [userAnswers, setUserAnswers] = useState(
+    Array(questions.length).fill(null)
+  );
+  const [showAnswers, setShowAnswers] = useState(false);
+  const [showResult, setShowResult] = useState(false);
 
-  const handleCurrect = (current) => {
-    setTimeout(() => {
-      // console.log(current);
-      if (current) {
-        setScore(score + 1);
-      }
-      setUserAnwers((prev) => {
-        const updateAnwers = [...prev];
-        updateAnwers[currentQuestion] = current;
-        return updateAnwers;
-      });
-      if (currentQuestion + 1 < questions.length) {
-        setCurrentQuestion(currentQuestion + 1);
-      } else {
-        setShowQuestion(true);
-      }
-      setLoading(false);
-    }, 1500);
-    setLoading(true);
+  useEffect(() => {
+    localStorage.setItem("currentQuestion", currentQuestion);
+    localStorage.setItem("score", score);
+    localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [currentQuestion, score, userAnswers, darkMode]);
+
+  const handletoggleDarkMode = () => {
+    setDarkMode(!darkMode);
   };
+  const handleAnswer = (isCorrect, index) => {
+    if (userAnswers[currentQuestion] !== null) return;
 
-  const handleSuccess = () => {
-    setLoading(true);
-    setShowAnswers(false);
-    setTimeout(() => {
-      navigate("/");
-    }, 2000);
+    if (isCorrect) setScore((prev) => prev + 1);
+
+    setUserAnswers((prev) => {
+      const updatedAnswers = [...prev];
+      updatedAnswers[currentQuestion] = index;
+      return updatedAnswers;
+    });
   };
-
-  const handleShowAnswers = () => {
+  const handleNextQuestion = () => {
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion((prev) => prev + 1);
+    }
+  };
+  const handlePrevQuestion = () => {
+    if (currentQuestion > 0) {
+      setCurrentQuestion((prev) => prev - 1);
+    }
+  };
+  const handleFinishQuiz = () => {
     setShowAnswers(true);
-    setUserAnwers(userAnwers);
+  };
+  const handleShowResult = () => {
+    setShowAnswers(false); // إخفاء قائمة الإجابات
+    setShowResult(true); // اظهار النتائج
+  };
+  const handleShowQuestion = () => {
+    setShowResult(false); // إخفاء النتائج
+    setShowAnswers(false); // إخفاء قائمة الإجابات
+    setCurrentQuestion(0); // إعادة المستخدم إلى أول سؤال
   };
   const handleRestart = () => {
     setScore(0);
     setCurrentQuestion(0);
-    setShowQuestion(false);
+    setShowResult(false);
+    setShowAnswers(false);
+    setUserAnswers(Array(questions.length).fill(null));
   };
+  const appStyles = {
+    backgroundColor: darkMode ? "#212529" : "#f8f9fa",
+    color: darkMode ? "#f8f9fa" : "#212529",
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    transition: "all 0.3s ease-in-out",
+  };
+  const cardStyles = {
+    backgroundColor: darkMode ? "#333" : "#fff",
+    color: darkMode ? "#fff" : "#000",
+    padding: "20px",
+    borderRadius: "10px",
+    boxShadow: "0px 4px 6px rgba(0,0,0,0.1)",
+    textAlign: "center",
+    minWidth:"80%"
+  };
+
   return (
-    <div className="quiz container text-center  mt-4">
-      <h1 className="title"> Quiz App </h1>
-      <div>
-        {showQuestion ? (
-          <>
-            <div className="final ">
-              <h1>Final result</h1>
-              <h2>Email : {location.state.email}</h2>
-              <h2
-                className={
-                  score <= score / score.length ? "text-danger" : "text-success"
-                }
-              >
-                {score} out of 3
-              </h2>
+    <div
+      // className={`container text-center mt-4 `}
+      style={appStyles}
+    >
+      <button
+        className="btn btn-dark mode-toggle "
+        onClick={handletoggleDarkMode}
+      >
+        {darkMode ? "Light Mode ☀️" : "Dark Mode 🌙"}
+      </button>
+      <h1 className="title mt-3">Quiz App</h1>
 
-              {score > score / 2 ? (
-                <>
-                  <button
-                    className="btn btn-success m-1"
-                    onClick={handleSuccess}
-                  >
-                    Finish
-                  </button>
-                  <button
-                    className="btn btn-success m-1"
-                    onClick={handleShowAnswers}
-                  >
-                    Show answer
-                  </button>
-                </>
-              ) : (
-                <button className="btn btn-danger" onClick={handleRestart}>
-                  Restart
-                </button>
-              )}
-              {/* {loading && <h1 className="text-center ">Loading...</h1>} */}
-            </div>
-
-            <div className="container mt-4">
-              {showAnswers &&
-                questions.map((question, index) => (
-                  <div key={index} className="result-item">
-                    <h1>
-                      {index + 1}. {question.question}
-                    </h1>
-                    <div key={Math.random()}>
-                      {question.answers.map((answer, ansindex) => {
-                        const isUserAnswer =
-                          userAnwers[index] === answer.correct;
-                        const isCorrectAnswer = answer.correct;
-
-                        let btnClass =
-                          "btn btn-outline-secondary text-dark fw-bold w-100 m-2 p-2";
-
-                        if (!isUserAnswer && !isCorrectAnswer) {
-                          return (
-                            <button className="btn border text-dark fw-bold w-100 m-2 p-2 ">
-                              {answer.text}
-                            </button>
-                          );
-                          // return null
-                        } else if (isUserAnswer && !isCorrectAnswer) {
-                          btnClass +=
-                            "btn btn-danger text-dark fw-bold w-100 m-2 p-2 border"; // إجابة خاطئة
-                        } else if (isCorrectAnswer) {
-                          btnClass =
-                            "btn btn-success text-light fw-bold w-100 m-2 p-2 border"; // إجابة صحيحة
-                        }
-                        return (
-                          <button
-                            key={ansindex}
-                            className={btnClass}
-                            disabled // تعطيل الزر عند عرض النتائج
-                          >
-                            {answer.text}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-                ))}
-            </div>
-          </>
-        ) : (
-          <>
-            <h2>
-              Question Number: {currentQuestion + 1} of {questions.length}
-            </h2>
-            <h1 className="mt-5">
-              {currentQuestion + 1} - {questions[currentQuestion].question}
-            </h1>
-            {questions[currentQuestion].answers.map((option,index) => (
-              <div key={index}>
-                <button
-                  className="btn btn-outline-secondary text-dark fw-bold w-100 m-2 p-2 "
-                  onClick={() => handleCurrect(option.correct)}
-                >
-                  {option.text}
-                </button>
-              </div>
-            ))}
-          </>
-        )}
-        {loading && <h1 className="text-center">Loading...</h1>}
-      </div>
+      {showResult ? (
+        <ShowResult
+          score={score}
+          questions={questions}
+          handleRestart={handleRestart}
+          cardStyles={cardStyles}
+        />
+      ) : showAnswers ? (
+        <ShowAnswers
+          questions={questions}
+          userAnswers={userAnswers}
+          handleShowResult={handleShowResult}
+          handleShowQuestion={handleShowQuestion}
+          cardStyles={cardStyles}
+        />
+      ) : (
+        <ShowQuestions
+          currentQuestion={currentQuestion}
+          questions={questions}
+          userAnswers={userAnswers}
+          handlePrevQuestion={handlePrevQuestion}
+          handleFinishQuiz={handleFinishQuiz}
+          handleNextQuestion={handleNextQuestion}
+          handleAnswer={handleAnswer}
+          cardStyles={cardStyles}
+        />
+      )}
     </div>
   );
 }

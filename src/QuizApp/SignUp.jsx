@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import toast from "react-hot-toast";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import toast, { Toaster } from "react-hot-toast";
+import { Link, useNavigate } from "react-router-dom";
+
 function SignUp() {
   const [dataUser, setData] = useState({ name: "", email: "", password: "" });
   const [loading, setLoading] = useState(false);
@@ -9,52 +9,57 @@ function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (dataUser.name === "" || dataUser.email === "" || dataUser.password === "") {
+    if (!dataUser.name || !dataUser.email || !dataUser.password) {
       toast.error("Please fill all fields");
-    } else {
-      // Saving user data in localStorage
+      return;
+    }
+
+    try {
       localStorage.setItem("user", JSON.stringify(dataUser));
       setLoading(true);
-      toast.success("Creating successful");
-      setTimeout(() => {
-        navigate("/", { state: dataUser });
-      }, 2000);
+      toast.success("Account created successfully");
+      setTimeout(() => navigate("/", { state: dataUser }), 2000);
+    } catch (error) {
+      toast.error("Error saving user data");
+      setLoading(false);
     }
   };
 
   return (
     <>
-      <ToastContainer position="top-center" />
-      {!loading ? (
-        <div className="form">
-          <form className="container border p-4 rounded" onSubmit={handleSubmit}>
-            <h1 className="text-center m-3">Sign Up</h1>
-            <input
-              type="text"
-              placeholder="Name"
-              className="m-2 form-control"
-              onChange={(e) => setData({ ...dataUser, name: e.target.value })}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="m-2 form-control"
-              onChange={(e) => setData({ ...dataUser, email: e.target.value })}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              className="m-2 form-control"
-              onChange={(e) => setData({ ...dataUser, password: e.target.value })}
-            />
-            <button className="btn btn-primary m-2 w-100">Sign Up</button>
-          </form>
-        </div>
-      ) : (
-        <h1 className="text-center position-absolute top-50 start-50 translate-middle">
-          Loading...
-        </h1>
-      )}
+      <Toaster position="top-center" />
+      <div className="container d-flex justify-content-center align-items-center vh-100">
+        <form className="border p-4 rounded shadow-lg w-50" onSubmit={handleSubmit}>
+          <h1 className="text-center mb-4">Sign Up</h1>
+          <input
+            type="text"
+            placeholder="Name"
+            className="form-control mb-3"
+            value={dataUser.name}
+            onChange={(e) => setData({ ...dataUser, name: e.target.value })}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="form-control mb-3"
+            value={dataUser.email}
+            onChange={(e) => setData({ ...dataUser, email: e.target.value })}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="form-control mb-3"
+            value={dataUser.password}
+            onChange={(e) => setData({ ...dataUser, password: e.target.value })}
+          />
+          <button className="btn btn-primary w-100" disabled={loading}>
+            {loading ? "Signing Up..." : "Sign Up"}
+          </button>
+          <p className="text-center mt-3">
+            Already have an account? <Link to="/login">Login</Link>
+          </p>
+        </form>
+      </div>
     </>
   );
 }

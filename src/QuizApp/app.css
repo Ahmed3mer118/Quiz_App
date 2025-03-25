@@ -1,21 +1,24 @@
-/* .correct-answer {
-    color: green;
-  }
-  
-  .incorrect-answer {
-    color: red;
-  }   */
-     .form{
-        /* height: 100vh; */
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 60%;
-        margin: auto;
-        text-align: center;
-     }
-   
+الوضع العادي
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: all 0.3s ease-in-out;
+}
+
+/* الوضع المظلم */
+ .dark-mode{
+  background-color: #212529;
+  color: #f8f9fa !important;
+}
+
+.dark-mode .card {
+  background-color: #333;
+  color: #fff;
+}
+
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
